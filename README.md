@@ -1,6 +1,6 @@
 # Acme::Leeway
 
-When your figures are closely inspected, wouldn't you rest more easily given a little leeway?
+Numbers seem a little more impressive, provided a little leeway.
 
 ## Installation
 
