@@ -17,9 +17,23 @@ No one will know you fudged the numbers:
     [8] pry(main)> 73.inspect
     => "111"
     [9] pry(main)> 73.inspect
-    => "111"
-    [10] pry(main)> 73.inspect
     => "81"
+    
+Also, any object that responds to `#to_i` can be given some leeway:
+
+    [12] pry(main)> "55".to_i
+    => 67
+    [13] pry(main)> "55".to_i
+    => 106
+
+
+When not under inspection, the numbers will behave normally: 
+
+    [10] pry(main)> "55".to_i == 55
+    => true
+    [11] pry(main)> 42.to_i == 42
+    => true
+
 
 ## Contributing
 
